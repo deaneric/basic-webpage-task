@@ -1,0 +1,343 @@
+*{
+	box-sizing:border-box;	
+}
+
+
+ $bar-bg-color: #808080;
+ $div-bar-bg-color:#8080800d;
+ $prime-color: #2bb5d2;
+ $footer-color: #0c0b0bc7;
+ $color-2: #80808014;
+
+
+@font-face {
+    font-family: 'Roboto', sans-serif;    
+}
+
+p{
+	font-family: 'Roboto', sans-serif;  
+	font-size: 0.9rem;
+}
+.btn{
+	font-weight:bold;
+}
+
+/****NAVIGATION STYLE***************/
+.navbar{
+	max-height: 120px;
+	width: 100%;
+	img{
+    	width: 5rem;
+        height: 4rem;
+    }
+	ul{
+	    flex-direction: row;
+        margin: auto;
+    }
+}
+
+.navbar-brand{
+    border-top: 5px solid $prime-color;
+    margin:auto;	
+}
+
+a.nav-link.rounded.px-3 {
+    color: $bar-bg-color;
+}
+
+li.nav-item.active.mx-1 a:last-child{
+	color:white!important;
+}
+
+/*******IMAGE SECTION************/
+.image-section{
+    background-image: url(../images/bags.jpg), url(../images/shop1.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 170px 150px, cover;
+    background-position: 900px bottom,center;
+    height: 300px;
+	color: white;
+}
+
+/*******MANAGE PROJECT SECTION************/
+.manage-projects{
+	max-width: 290px;
+	p{
+	    color: $bar-bg-color;
+	    font-size: 0.9rem;
+	}
+}
+span.badge.rounded-circle {
+    font-size: 0.9rem;
+}
+
+/********MEDIA SECTION***********/
+.media #discount_image{
+	width: 10rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.media-body{
+    span{
+	    color: $bar-bg-color;
+        font-size: smaller;
+    }
+    p {
+        color: $bar-bg-color;
+	}
+}
+
+/*******POWER BY SECTION************/
+.power-millions p {
+    color: $bar-bg-color;
+}
+
+/********FEATURE SECTION***********/
+.feature-div {   
+    padding: 50px;   
+    color: white;
+	li, pre {
+        list-style-type: none;
+        line-height: 2;
+	    font-family:'Roboto', sans-serif;
+	    font-size: 0.8rem;
+	    color: white!important;	
+    }
+	&::after{
+	    content: "";
+        position: absolute;
+        border-style: solid;
+        border-color: white white transparent white;
+        top: 0px;
+        left: 270px;
+        border-width: 24px 18px;
+	}
+}
+
+/******FEATURE ARTICLE SECTION*************/
+.feature-article{
+	background-color: #e8e8e8;
+}
+.feature-div i {
+    transform: translate(-20px);
+    color: white;
+}
+.article-div{
+	padding: 50px;
+}
+.article-content i,p{
+	color: $bar-bg-color;
+}
+
+/*******POWER BY SECTION************/
+.power-section{
+	background-color: #e8e8e8;
+	font-family:'Roboto', sans-serif;
+	padding: 25px 40px;
+}
+
+/******SHOP NOW SECTION*************/
+.col.power-body {
+	padding: 50px 0;
+    color: white;
+}
+
+/******PRODUCT SECTION*************/
+.products-guide{
+	background-color: #e8e8e8;
+	.product-image {
+        width: 166px;
+        height: 140px;
+        background-color: $div-bar-bg-color;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+	.product-info {
+        width: 430px;
+        margin: 0 0px 0 30px;
+    }
+}
+
+/*******ITEM SECTION************/
+.featue-item {
+    max-width: 260px;
+    width: 100%;    
+    margin: 10px 0;
+	.item-image {
+        background-color: #80808014;
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+} 
+.item-name{
+    text-align: center;
+}
+.item-price{
+   .cost-item {
+        width: 25%;
+        height: auto;
+        float: left;
+        padding: 10px 15px;
+        color: white;
+    }
+    .btn{
+        width: 75%;
+        height: auto;
+        padding: 0.6rem;
+        margin: 0;
+	    background-color: #e8e8e8
+    }
+}
+
+/*******COMMENT SECTION************/
+.comment-head{
+    .profile-pic {
+        background-color: $color-2;
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        vertical-align: top;
+        border-radius: 30px;
+        border: 2px dotted $bar-bg-color;
+        overflow: hidden;
+		img {
+            width: inherit;
+            height: inherit;
+            object-position: center;
+            object-fit: cover;
+        }
+	}
+	span{
+        font-family: 'Roboto', sans-serif;  
+	    font-size: 0.9rem;
+    }
+}
+ 
+.comment-body {
+    background-color: #e8e8e8;
+    padding: 45px 35px;
+    word-spacing: 0.4rem;
+	&::after {
+        content: "";
+        border-style: solid;
+        border-width: 22px 15px;
+        border-color: transparent transparent #e8e8e8 transparent;
+        position: absolute;
+        transform: translate(0rem,-11.8rem);
+    }
+}
+
+/******FOOTER SECTION*************/
+footer {
+    background-color: #1b1d1f;
+    border-top: 5px solid $prime-color;
+	h5{
+        color:white;
+    }
+	ul{
+       list-style-type: none;
+	   padding-top: 2rem;
+    }
+	li{
+        color: #c1c1c1;
+        font-size: 0.9rem;
+    }
+	.top-list-item{
+        margin-bottom: 1.7rem;
+    }
+}
+.footer-info{
+    text-align:center;
+	line-height: 2;
+	.fab{
+        color: #c1c1c1;
+    }
+}
+.footer-logo {
+    width: 100px;
+    margin: auto;
+	img{
+        width: 100px;
+        object-fit: cover;
+        margin: 0px 0 -15px 0;
+    }
+}
+.social{    
+    border-radius: 18px;
+    background-color: #80808080;
+    margin: 0 4px;	
+}
+.fb{
+    padding: 4px 10px;	
+}
+.tweet{
+	padding: 4px 7px;    	
+}
+.link{
+    padding: 4px 7px;	
+}
+.google{
+    padding: 4px 5px;	
+}
+
+//*********VIEW PORT SIZE**********
+$xs : 576px;  
+$sm : 768px;
+$md : 992px;
+$lg : 1200px;
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: $xs) {
+/*****NAVIGATION STYLE*************/
+.navbar-nav {
+	flex-direction:row;
+}
+/******MANAGE PROJECT SECTION*************/
+span.badge.rounded-circle{
+	font-size: 1.2rem;
+}
+/*******MEDIA SECTION************/
+.media{
+	#discount_image{
+	    width: 15rem;
+    }
+}
+/*******FEATURE SECTION************/
+.feature-div {
+    padding: 50px 25px;
+    &::after {
+        left: 230px;
+	}
+}
+/*******ARTICLE SECTION************/
+.article-div{
+    padding: 50px 25px;
+}
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: $sm) { 
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: $md) { 
+/*******POWER BY SECTION************/
+   .power-section{
+	    padding: 25px 100px;
+    }
+	.item-price{
+       .cost-item {
+            padding: 10px 8px;
+	    }
+   } 
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: $lg) {
+.item-price{
+       .cost-item {
+            padding: 10px 15px;
+	    }
+   } 
+   
+}
